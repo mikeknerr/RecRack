@@ -16,7 +16,6 @@ class App extends Component {
     this.removeTrack = this.removeTrack.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
     this.setPlaylistName = this.setPlaylistName.bind(this);
-    //this.clearPlaylist = this.clearPlaylist.bind(this);
   }
 
   searchSpotify(term) {
@@ -50,9 +49,7 @@ class App extends Component {
     this.setState({playlistName: name});
   }
 
-  /*clearPlaylist() {
-    this.setState({playlist: ''});
-  }*/
+
 
 
     render() {
