@@ -4,6 +4,7 @@ const clientId = '380e357d17e1453cae060423dc206ae7';
 
 let userToken;
 let redirectUri = 'http://localhost:3000/';
+let searchTerm;
 
 const Spotify = {
   getAccessToken() {
@@ -27,7 +28,7 @@ const Spotify = {
 
 
   search(term) {
-    this.getAccessToken();
+    let userToken = this.getAccessToken();
     if (userToken) {
       return fetch('https://api.spotify.com/v1/search?type=track&q=' + term, {
     headers: {

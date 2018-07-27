@@ -1,8 +1,15 @@
 
 .SearchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 6.94rem;
   margin-bottom: 6.33rem;
 }
@@ -10,7 +17,7 @@
 .SearchBar input {
   width: 287px;
   padding: .88rem 0;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 3px;
   margin-bottom: 2.22rem;
   color: #010c3f;
@@ -20,6 +27,9 @@
 
 .SearchBar input:focus {
   outline: none;
+  -webkit-box-shadow: 0 0 0 2pt #7E67FF;
+          box-shadow: 0 0 0 2pt #7E67FF;
+
 }
 
 .SearchBar a {
@@ -30,9 +40,10 @@
   background-color: #010c3f;
   text-align: center;
   font-size: .833rem;
+  -webkit-transition: background-color .25s;
   transition: background-color .25s;
 }
 
 .SearchBar a:hover {
-  background-color: rgba(108, 65, 233, .7);
+  background-color: #7E67FF;
 }
